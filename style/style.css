@@ -1,0 +1,155 @@
+:root {
+	--ceu: #76c3c4;
+    --dourado: #e9c66e;
+	--creme: #f3ead2;
+	--tinta: #173b3d;
+	--sombra: #102827;
+	--texto-suave: #c4d2c5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100px;
+	margin: 0;
+	color:rgba(243, 237, 227, 0.9);
+	background:
+		linear-gradient(180deg, rgba(118, 195, 196, 0.1), transparent 25rem),
+		var(--sombra);
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.pagina {
+	width: min(100% - 48px, 1040px);
+	margin: 0 auto;
+	padding: 72px 0 64px;
+}
+
+.introducao {
+	max-width: 710px;
+	margin-bottom: 48px;
+}
+
+.sobretitulo {
+	margin: 0 0 16px;
+	color: var(--ceu);
+	font-family: "Segoe UI", sans-serif;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.Titulo2{
+    margin: 0;
+	color: var(--creme);
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 0.98;
+}
+
+.Titulo2 span {
+    margin:auto
+    color: var(--dourado);
+    font-style: italic;
+}
+
+h1 {
+	margin: 0;
+	color: var(--creme);
+	font-size: 90px;
+	font-weight: 400;
+	line-height: 0.98;
+}
+
+h1 span {
+	color: var(--dourado);
+	font-style: italic;
+}
+
+.descricao {
+	max-width: 560px;
+	margin: 24px 0 0;
+	color: var(--texto-suave);
+	font-family: "Segoe UI", sans-serif;
+	font-size: 1.08rem;
+	line-height: 1.7;
+}
+
+.descricao-obra {
+    max-width: 560px;
+    margin: 24px 0 0;
+    color: var(--texto-suave);
+    font-family: "Segoe UI", sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.obra-cabecalho {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.marcador {
+	width: 9px;
+	height: 9px;
+	flex: 0 0 9px;
+	background: var(--dourado);
+	transform: rotate(45deg);
+}
+
+h2 {
+	margin: 0;
+	color: var(--creme);
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+
+.figura {
+	margin: 0;
+	padding: 10px;
+	border: 1px solid rgba(233, 198, 110, 0.45);
+	background: var(--tinta);
+}
+
+.figura img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.descricao-figura {
+	padding: 14px 8px 5px;
+	color: var(--texto-suave);
+	font-family: "Segoe UI", sans-serif;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+	.pagina {
+		width: min(100% - 32px, 1040px);
+		padding: 48px 0 40px;
+	}
+
+	.introducao {
+		margin-bottom: 36px;
+	}
+
+	.descricao {
+		font-size: 1rem;
+	}
+
+	h2 {
+		font-size: 1.1rem;
+	}
+
+	.figura {
+		padding: 6px;
+	}
+}
